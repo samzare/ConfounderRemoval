@@ -15,7 +15,7 @@ parser.add_option('-j', '--workers', dest='workers', default=1, type='int',
                   help='number of data loading workers (default: 16)')
 
 # For data
-parser.add_option('--dn', '--data_name', dest='data_name', default='Glum',
+parser.add_option('--dn', '--data_name', dest='data_name', default='NIH',
                   help='mnist, fashion_mnist, t_mnist, c_mnist (default: mnist)')
 parser.add_option('--dl', '--data_len', dest='data_len', default=None, type='int',
                   help='Number of data samples (default: None which automatically takes all samples)')
@@ -49,7 +49,7 @@ parser.add_option('--gc', '--gradcam', dest='gradcam', default=True,
 
 parser.add_option('--lp', '--load_model_path', dest='load_model_path',
                   default='./'
-                          './save/20220519_132817/models/264',  #263
+                          'path to saved model',
                   help='path to load a .ckpt model')
 
 
